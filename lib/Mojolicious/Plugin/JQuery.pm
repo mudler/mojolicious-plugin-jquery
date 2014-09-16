@@ -138,7 +138,7 @@ Set this to 1 if you want to include this js.
 =item * jquery_1
 
 This will include the last 1.x.x JQuery version shipped with this plugin.
-Set this to 1 if you want to use this version. 
+Set this to 1 if you want to use this version.
 (This option will prevent JQuery Migrate inclusion)
 
 =back
@@ -158,7 +158,6 @@ sub register {
     my @files
         = $self->find_files( [ $self->asset_path . '/' . $file_type ],
         $file_type );
-
     push @{ $app->static->paths }, $self->asset_path;
     $app->asset(
         'jquery.js' => $config->{jquery_1}
@@ -180,7 +179,7 @@ sub register {
 
 Search a given file type in all directories of the array.
 
-Required parameters: 
+Required parameters:
 
 =over 4
 
